@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  app:
+    user: "${UID}:${GID}"
+    image: ireport
+    build: .
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - "./iReport-5.6.0:/opt/iReport-5.6.0"
+      - "./arquivos:/arquivos"
+      - "/home/$USER:/home/$USER"
+      - "/etc/group:/etc/group:ro"
+      - "/etc/passwd:/etc/passwd:ro"
+      - "/etc/shadow:/etc/shadow:ro"
+      - "/etc/sudoers.d:/etc/sudoers.d:ro"
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+    network_mode: host
+    container_name: ireport_container
+    command: opt/iReport-5.6.0/bin/ireport
