@@ -9,7 +9,7 @@ services:
       - DISPLAY=$DISPLAY
     volumes:
       - "./iReport-5.6.0:/opt/iReport-5.6.0"
-      - "./arquivos:/arquivos"
+      - "./files:/files"
       - "/home/$USER:/home/$USER"
       - "/etc/group:/etc/group:ro"
       - "/etc/passwd:/etc/passwd:ro"
