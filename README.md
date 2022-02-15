@@ -1,6 +1,6 @@
 # iReport Container
 
-Runs [iReport-5.6.0](https://community.jaspersoft.com/project/ireport-designer), mainly developed to edit '.jrxml' files with this software thats requires jdk-7.
+Runs [iReport-5.6.0](https://community.jaspersoft.com/project/ireport-designer) and was mainly developed to edit '.jrxml' files with this software thats requires jdk-7.
 
 ## Requirements
 * Ubuntu
